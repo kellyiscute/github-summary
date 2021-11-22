@@ -39,7 +39,7 @@ jobs:
       
       - name: run
         env: 
-          GITHUB_PAT: ${secrets.PAT}
+          GITHUB_PAT: ${{secrets.PAT}}
           GITHUB_USERNAME: guo40020
         run: node build
         
