@@ -40,7 +40,7 @@ async function getData() {
       const data = repoData.data as any as RepoContributionsType;
       for (const repoContrib of data) {
         // exclude other's repos
-        if (repoContrib.author.login !== "guo40020") {
+        if (repoContrib.author.login !== username) {
           continue;
         }
         const reduced = repoContrib.weeks.reduce(
